@@ -13,6 +13,8 @@ import {
   Terminal
 } from "lucide-react";
 
+const API_URL = import.meta.env.VITE_BACKEND_URL;
+
 export default function StockAgentUI() {
   const [prompt, setPrompt] = useState("");
   const [response, setResponse] = useState("");
@@ -32,8 +34,8 @@ export default function StockAgentUI() {
     abortControllerRef.current = controller;
 
     try {
-      const res = await fetch("http://localhost:5000/api/analyze", {
-        method: "POST",
+      const res = await fetch(`${API_URL}/api/analyze`, {
+        method: "POST", 
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt: prompt.trim() }),
         signal: controller.signal,
