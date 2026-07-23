@@ -257,16 +257,6 @@ Deploy and enjoy!
 
 ---
 
-# 📸 Screenshots
-
-> Add screenshots of:
-
-- Dashboard
-- AI Streaming Response
-- Stock Analysis Report
-- Dark Mode Interface
-
----
 
 # 📌 Future Enhancements
 
